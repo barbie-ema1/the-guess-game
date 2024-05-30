@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3pc;
+    background-image: url('https://img.freepik.com/free-vector/space-game-background-with-landscape-planet_107791-1700.jpg');
+    background-size:contain;
+    overflow: hidden;
+  }
+
+/*game body design*/
+
+  .gamebox{
+    width: 30%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFE6E6;
+    align-self: center;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 10px#FFCDEA;
+    padding: 6px;
+    margin: 6px;
+    
+  }
+
+  h2{
+    margin-top: 5px;
+    margin-top: 1pc;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    padding: 6px;
+    margin: 6px;
+    font-size: 28px;
+  }
+
+
+  .quest{
+    background-color: #824D74;
+    color: #FFE6E6;
+    margin: 5px;
+    padding:10px;
+    border-radius: 50%;
+    height: 30%;
+    width: 20%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 9.2pc;
+    margin-top: 1pc;
+    margin-bottom: 1pc;
+    box-shadow: 0 2px 2px 2px #f79fd2;
+
+  }
+
+  span p{
+    margin-bottom: 1pc;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+  }
+
+
+
+
+  .title{
+    border-bottom: 3px solid #824D74;
+    text-align: center;
+  }
+  
+  .display p{
+    margin-top: 0.5pc;
+    text-align: center;
+    margin-bottom: 2px;
+  }
+
+  .displayresult{
+    outline: 2px solid #C738BD;
+    margin: 2pc;
+    padding: 2pc;
+    margin-top: -0.5pc;
+    border-style: groove;
+    background-color: #F5DAD2;
+    color: #824D74;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    
+    
+  }
+
+  input{
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 15%;
+    margin-left: 5.2pc;
+    margin-bottom: 1pc;
+    margin-top: -0.2pc;
+    padding: 8px;
+    
+    border-color: 2px solid #FFCDEA;
+    outline: 2px solid #FFCDEA;
+    background-color: #f8e2db;
+    
+  }
+
+  button{
+  
+    width: 30%;
+    align-content: space-around;
+    height: 15%;
+    padding: 5px;
+    margin-left: 0.5pc;
+    margin-bottom: 1pc;
+    background-color: #C738BD;
+    border-radius: 5px;
+    border:none;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 2px;
+
+  }
+
+  button:hover{
+    background-color: #f79fd2;
+    color: #ffff;
+  }
+
+  #showans{
+    background-color: #D74B76;
+
+  }
+
+  #showans:hover{
+    background-color: #dd688b;
+    color: #ffff;
+  }
+
+  .gamestats{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    margin-top: 1pc;
+    margin-left: 1.5pc;
+  }
+
+  #attempts{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+  }
+
+  #wins{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+
+  }

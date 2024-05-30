@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Guess Game</title>
+</head>
+<body onload="generate();">
+    <div class="gamebox">
+
+        <div class="title">
+            
+            <h2>GUESS THE NUMBER!</h2>
+            <div class="quest">?</div>
+            <span><p>Between 1 - 100</p></span>
+
+        </div>
+
+
+        <div class="display">
+            <p><i>You Have Only Three Tries So Start Guessing!😉</i></p>
+            <br>
+            <div class="displayresult">
+                <div id="result"></div>
+                <div id="resulttext"></div>
+            </div>
+            <input type="number" placeholder="Enter your guess here..." id="guessnum" required>
+            <button onclick="check()" id="submit">Submit</button>
+            <button onclick="tryagain()" id="tryagain">Try Again</button>
+            <button onclick="show()" id="showans">Give Up</button>
+        
+        </div>
+
+
+        <div class="gamestats">
+            <div id="attempts">Attempts:</div>
+            <div id="wins">User Wins:</div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
