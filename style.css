@@ -202,3 +202,129 @@ button .again{
   color: #ffc300;
   margin-bottom: 6px;
 }
+
+
+@media screen and (max-width:1440px){
+
+.gamebox{
+  width: 40%;
+}
+
+h3{
+  font-size: 42px;
+}
+
+.label-score{
+  margin-top: -3pc;
+  font-size: 22px;
+}
+.label-highscore{
+  margin-bottom: 3pc;
+  font-size: 22px;
+}
+
+.btn {
+  border: none;
+  height: 80%;
+  width: 40%;
+  padding: 6px;
+  border-radius: 3px;
+  background-color: #FF76CE;
+  color: #111010;
+  
+  font-family: inherit;
+  
+  cursor: pointer;
+}
+
+button{
+  font-size: 30px;
+}
+.between{
+  font-size: 18px;
+}
+
+}
+
+
+@media  (min-width:738px) and (max-width:1024px)  {
+
+.gamebox{
+  width: 50%;
+  height: 90%;
+}
+
+h3{
+  font-size: 32px;
+}
+
+.label-score{
+  margin-top: -3px;
+}
+
+
+
+}
+
+
+@media (max-width:768px) and (min-width:554px){
+.gamebox{
+  height: 95%;
+}
+
+.number{
+  font-size: 38px;
+}
+
+h3{
+  font-size: 28px;
+}
+
+.label-score{
+  font-size: 14px;
+}
+.label-highscore{
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.between{
+  font-size: 14px;
+}
+
+.btn {
+  border: none;
+  height: 60%;
+  width: 40%;
+  padding: 6px;
+  border-radius: 3px;
+  background-color: #FF76CE;
+  color: #111010;
+  
+  font-family: inherit;
+  
+  cursor: pointer;
+}
+
+button{
+  font-size: 22px;
+}
+
+.message{
+  font-size: 18px;
+}
+
+}
+
+
+@media (min-width:375px) and (max-width:554px){
+
+body{
+  background-size:cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+
+
+}
