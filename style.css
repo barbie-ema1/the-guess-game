@@ -180,7 +180,7 @@ button .again{
 
 .message {
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   height: 20%;
   margin-left: 8px;
   width: fit-content;
@@ -189,7 +189,7 @@ button .again{
   font-weight: 400;
   font-style: normal;
   color: #640D6B;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .label-score {
@@ -205,9 +205,12 @@ button .again{
 
 
 @media screen and (max-width:1440px){
+body{
+  background-size: cover;
+}
 
 .gamebox{
-  width: 40%;
+  width: 35%;
 }
 
 h3{
@@ -248,10 +251,12 @@ button{
 
 
 @media  (min-width:738px) and (max-width:1024px)  {
-
+body{
+  background-size: cover;
+}
 .gamebox{
-  width: 50%;
-  height: 90%;
+  width: 40%;
+  height: 75%;
 }
 
 h3{
@@ -268,12 +273,17 @@ h3{
 
 
 @media (max-width:768px) and (min-width:554px){
-.gamebox{
-  height: 95%;
+body{
+  background-size: cover;
+}
+
+  .gamebox{
+  width: 45%;
+  height: 80%;
 }
 
 .number{
-  font-size: 38px;
+  font-size: 30px;
 }
 
 h3{
@@ -325,6 +335,116 @@ body{
   background-repeat: no-repeat;
 }
 
+.gamebox{
+  width: 80%;
+ 
+}
 
+h3{
+  font-size: 20px;
+}
+
+.number{
+  width: 20%;
+  font-size: 22px;
+}
+
+.label-highscore{
+  font-size: 14px;
+}
+.label-score{
+  font-size: 12px;
+  margin-top: -2pc;
+}
+
+.displaytext{
+  margin-top: -1pc;
+}
+
+.between{
+  font-size: 14px;
+}
+
+.btn {
+  margin-top: -1pc;
+  border: none;
+  height: 40%;
+  width: 40%;
+  padding: 6px;
+  border-radius: 3px;
+  background-color: #FF76CE;
+  color: #111010;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button{
+  font-size: 16px;
+}
+
+header{
+  margin-bottom: 2pc;
+}
+
+}
+
+@media (min-width:320px) and (max-width:554px) {
+
+  body{
+    background-size:cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+  }
+  
+  .gamebox{
+    width: 80%;
+   
+  }
+  
+  h3{
+    font-size: 20px;
+  }
+  
+  .number{
+    width: 20%;
+    font-size: 22px;
+  }
+  
+  .label-highscore{
+    font-size: 14px;
+  }
+  .label-score{
+    font-size: 12px;
+    margin-top: -2pc;
+  }
+  
+  .displaytext{
+    margin-top: -1pc;
+  }
+  
+  .between{
+    font-size: 14px;
+  }
+  
+  .btn {
+    margin-top: -1pc;
+    border: none;
+    height: 40%;
+    width: 40%;
+    padding: 6px;
+    border-radius: 3px;
+    background-color: #FF76CE;
+    color: #111010;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  
+  button{
+    font-size: 16px;
+  }
+  
+  header{
+    margin-bottom: 2pc;
+  }
 
 }

@@ -1,5 +1,5 @@
 const body = document.querySelector('body');
-const secretNumber = document.querySelector('.number');
+const hiddenNumber = document.querySelector('.number');
 const numberGuess = document.querySelector('.guess');
 const btnCheck = document.querySelector('.check');
 const message = document.querySelector('.message');
@@ -9,7 +9,7 @@ const btnAgain = document.querySelector('.again');
 
 
 //secret number generate and initialize all nessary variable
-let secretNumberGenerator = parseInt(Math.random() * 100 + 1);
+let hiddenNumberGenerator = parseInt(Math.random() * 100 + 1);
 const highestInitialScoure = 3;
 let initialScore = highestInitialScoure;
 score.textContent = initialScore;
@@ -19,6 +19,7 @@ let highestScore = 0;
 //Function for dispaly various message 
 function displayMessage(dismessage) {
   message.textContent = dismessage;
+  
 }
 
 
@@ -31,10 +32,9 @@ function guessNumber() {
     console.log('#DAF7A6');
   }
   //The check number is equal
-  else if (gussesNumber === secretNumberGenerator) {
+  else if (gussesNumber === hiddenNumberGenerator) {
     message.textContent = '🎉Hurray! You guessed the Correct Number!🥳';
-    secretNumber.textContent = secretNumberGenerator;
-  
+    
 
 
     if (initialScore > highestScore) {
@@ -43,9 +43,9 @@ function guessNumber() {
     }
   }
   //The check number is not equal
-  else if (gussesNumber !== secretNumber) {
+  else if (gussesNumber !== hiddenNumber) {
     if (initialScore >= 1) {
-      if (gussesNumber > secretNumberGenerator) {
+      if (gussesNumber > hiddenNumberGenerator) {
         displayMessage('Opos! You Guessed too high📈');
         initialScore--;
         score.textContent = initialScore;
@@ -67,13 +67,12 @@ function guessNumber() {
 
 //Restore initial game value
 function restoreGameValue() {
-  secretNumberGenerator = parseInt(Math.random() * 100 + 1);
+  hiddenNumberGenerator = parseInt(Math.random() * 100 + 1);
   initialScore = highestInitialScoure;
   score.textContent = initialScore;
   displayMessage('Start guessing...');
-  secretNumber.textContent = '?';
+  hiddenNumber.textContent = '?';
   numberGuess.value = '';
-  secretNumber.style.width = '15rem';
   body.style.backgroundColor = '#222';
 }
 
