@@ -34,7 +34,11 @@ function guessNumber() {
   //The check number is equal
   else if (gussesNumber === hiddenNumberGenerator) {
     message.textContent = '🎉Hurray! You guessed the Correct Number!🥳';
-    
+  }else if (gussesNumber > 100){
+    message.textContent = "Select a number between 1 - 100🙄⚠️";
+  } else if (gussesNumber < 0){
+    message.textContent = "Please make sure the number is not negative⚠️";
+
 
 
     if (initialScore > highestScore) {
@@ -62,6 +66,10 @@ function guessNumber() {
   } else {
     displayMessage('🤕 Something Wrong! Try Again..');
   }
+
+
+
+
 }
 
 

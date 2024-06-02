@@ -121,7 +121,7 @@ h3 {
   background: none;
   border: 4px solid #8E3E63;
   font-family: inherit;
-  color: #FFDB00;
+  color: #ffae00;
   font-size: 28px;
   padding: 3px;
   width: 20%;
@@ -270,6 +270,8 @@ h3{
 
 
 }
+
+
 
 
 @media (max-width:768px) and (min-width:554px){
