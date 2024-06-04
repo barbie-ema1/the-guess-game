@@ -24,7 +24,7 @@
 
   .gamebox{
     width: 30%;
-    height: 80%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     background-color: #FFE6E6;
@@ -399,6 +399,7 @@ header{
   
   .gamebox{
     width: 80%;
+  
    
   }
   
