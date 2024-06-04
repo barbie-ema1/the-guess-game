@@ -28,7 +28,7 @@ function guessNumber() {
   const gussesNumber = parseInt(numberGuess.value);
   //Not input any number
   if (!gussesNumber) {
-    displayMessage('Opos you didnt guess any number😱');
+    displayMessage('Oops you didnt guess any number😱');
     console.log('#DAF7A6');
   }
   //The check number is equal
@@ -50,11 +50,11 @@ function guessNumber() {
   else if (gussesNumber !== hiddenNumber) {
     if (initialScore >= 1) {
       if (gussesNumber > hiddenNumberGenerator) {
-        displayMessage('Opos! You Guessed too high📈');
+        displayMessage('Oops! You Guessed too high📈');
         initialScore--;
         score.textContent = initialScore;
       } else {
-        displayMessage('Opos! You Guessed too low📉');
+        displayMessage('Oops! You Guessed too low📉');
         initialScore--;
         score.textContent = initialScore;
       }
